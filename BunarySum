@@ -1,0 +1,6 @@
+def binary_sum(string_num1,string_num2):
+  if isinstance(string_num1,str) and isinstance(string_num2,str) and \
+  string_num1.isdigit and string_num2.isdigit:
+    return int(string_num1,2) + int(string_num2,2)
+  else:
+    print("Arguments have to consist number in string type!")
