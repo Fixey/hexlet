@@ -1,0 +1,13 @@
+def fib(indx):
+  tuple_fib = (0,1)
+  count = 1
+  if indx < len(tuple_fib):
+    return tuple_fib[indx]
+  elif indx > 1:
+    while indx > count:
+      tuple_fib += ((tuple_fib[count]+tuple_fib[count-1]),)
+      count += 1
+    result = tuple_fib[indx-1] + tuple_fib[indx-2]
+    return result
+  else:
+    return "Error: This nubmer of element must be possitive"
