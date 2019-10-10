@@ -1,0 +1,5 @@
+def diff(corner1,corner2):
+  if abs(abs(corner1)-abs(corner2))<=180:
+    return abs(corner1-corner2)
+  else:
+    return 360-abs(corner1-corner2)
